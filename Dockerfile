@@ -30,7 +30,7 @@ RUN groupadd -r botrender && useradd -r -g botrender -G audio,video botrender \
 # Run botrender non-privileged
 USER botrender
 
-EXPOSE EXPOSE 80
+EXPOSE 80
 
 RUN npm install || \
   ((if [ -f npm-debug.log ]; then \
